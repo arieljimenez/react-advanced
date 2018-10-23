@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+*.log
+haters/ #<---- xDDDD
+.next/
+.build/
+layout.md
+variables.env
+package-lock.json
+yarn.lock

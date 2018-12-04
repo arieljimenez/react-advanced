@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 import Nav from './Nav';
 
+
 const Logo = styled.h1`
   font-size: 4rem;
   margin-left: 2rem;
@@ -16,7 +17,7 @@ const Logo = styled.h1`
     text-transform: uppercase;
     text-decoration: none;
   }
-  @media (max-with: 1300px){
+  @media (max-width: 1300px){
     margin: 0;
     text-align: center;
   }
@@ -34,7 +35,6 @@ const StyledHeader = styled.header`
       justify-content: center;
     }
   }
-
   .sub-bar {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -60,6 +60,5 @@ const Header = () => (
     </div>
   </StyledHeader>
 )
-
 
 export default Header;

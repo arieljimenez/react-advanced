@@ -8,3 +8,4 @@ layout.md
 variables.env
 package-lock.json
 yarn.lock
+.env

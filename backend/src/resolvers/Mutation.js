@@ -1,3 +1,5 @@
-const mutations = {};
+const mutations = {
+  hi: String
+};
 
 module.exports = mutations;

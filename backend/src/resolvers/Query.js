@@ -1,5 +1,7 @@
 const Query = {
-  hi: String
+  async getItems(parent, args, ctx, info){
+    return await ctx.db.query.items();
+  }
 };
 
 module.exports = Query;

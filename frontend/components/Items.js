@@ -4,6 +4,8 @@ import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import styled from 'styled-components';
 
+import Item from './Item';
+
 const ALL_ITEMS_QUERY = gql`
   query ALL_ITEMS_QUERY {
     # name of the query
@@ -41,7 +43,7 @@ export default class Items extends React.Component {
             if(loading) return <p>Loading...</p>
             if(error) return <p>Error: {error.message}</p>
             return <ItemsList>
-                {data.getItems.map(item => <p>{item.title}</p>)}
+                {data.getItems.map(item => <Item item={item} key={item.id} />)}
               </ItemsList>
           }}
         </Query>
